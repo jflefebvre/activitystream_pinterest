@@ -1,0 +1,7 @@
+name = Activitystream Pinterest
+description = What's been Pinned
+dependencies[] = activitystream 
+dependencies[] = activitystream_feed
+package = Activity Stream
+core = 6.x
+
