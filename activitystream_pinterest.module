@@ -62,7 +62,7 @@ function theme_activitystream_pinterest_item($activity) {
   $user = user_load(array('uid' => $node->uid));
   $name = theme('activitystream_username', $user);
   
-  return '<span class="activitystream-item">'. theme('activitystream_pinterest_icon') . " <span>$name " . t('pinned') . " " . l('<img src="' . $activity->link . '" alt="' . $node->title . '"/>', $activity->link, array('html'=>TRUE)) . " <span class=\"activitystream-created\">$date</span></span></span>";
+  return '<span class="activitystream-item">'. theme('activitystream_pinterest_icon') . " <span>$name " . t('pinned') . " " . l($node->title, $activity->link, array('html'=>TRUE)). " <span class=\"activitystream-created\">$date</span></span></span>";
 }
 
 function activitystream_pinterest_theme() {
